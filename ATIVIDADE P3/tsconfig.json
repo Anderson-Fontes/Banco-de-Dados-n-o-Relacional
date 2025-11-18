@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* --- Configurações Básicas --- */
+    "target": "ES2020", // Define a versão do JavaScript que o código será compilado
+    "module": "commonjs", // O formato de módulo padrão do Node.js
+    "esModuleInterop": true, // ESSENCIAL: Resolve o "sangramento" dos imports
+    "forceConsistentCasingInFileNames": true, // Garante que os nomes dos arquivos sejam case-sensitive
+    "skipLibCheck": true, // Pula a verificação de tipos em bibliotecas (melhora performance)
+
+    /* --- Organização do Projeto --- */
+    "rootDir": "./src", // Onde está o seu código-fonte TypeScript
+    "outDir": "./dist", // Onde o JavaScript compilado será salvo
+
+    /* --- Rigor e Qualidade do Código --- */
+    "strict": true, // Habilita todas as verificações de tipo estritas
+    "noImplicitAny": true, // Avisa se uma variável não tiver um tipo definido
+    "strictNullChecks": true, // Diferencia 'null' e 'undefined'
+    "alwaysStrict": true, // Garante o 'use strict' no JS compilado
+
+    /* --- Mapeamento para Debug --- */
+    "sourceMap": true // Cria arquivos .map.js para facilitar o debug
+  },
+  "include": [
+    "src/**/*" // Quais arquivos o TypeScript deve compilar
+  ],
+  "exclude": [
+    "node_modules", // Quais arquivos ele deve ignorar
+    "dist"
+  ]
+}
